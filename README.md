@@ -1,2 +1,1 @@
-# selfed
-Project for teach languages
+# Практические навыки в программировании
