@@ -1,0 +1,7 @@
+[package]
+name = "calc_of_mortgage"
+version = "0.1.0"
+authors = ["m0r15 <serenkovav@gmail.com>"]
+
+[dependencies]
+argparse = "0.2.1"
