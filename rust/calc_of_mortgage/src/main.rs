@@ -6,23 +6,20 @@ extern crate argparse;
 
 use argparse::{ArgumentParser, StoreTrue, Store};
 
+/// Mortgage - ипотека
 #[derive(Debug)]
 struct Mortgage {
-    sum:     f64, /// сумма ипотеки
-    percent: f64, /// процент по ипотеке (годовой)
-    period:  i32, /// период в месяцах
+    /// сумма ипотеки
+    sum:     f64, 
+    /// процент по ипотеке (годовой)
+    percent: f64, 
+    /// период в месяцах
+    period:  i32, 
 }
 
 impl Mortgage {
 
-    fn new() -> Mortgage {
-        Mortgage {
-            sum: 0.0,
-            percent: 0.0,
-            period: 0,
-        }
-    }
-
+    /// заполняет структуру
     fn build(gage_sum: f64, gage_percent: f64, gage_period: i32) -> Mortgage {
         Mortgage {
             sum:     gage_sum,
